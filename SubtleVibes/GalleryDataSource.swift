@@ -12,20 +12,36 @@ import Alamofire
 
 class GalleryDataSource {
     static let sharedInstance = GalleryDataSource()
+    let pageCount = 500;
+    let hardCodedLimit = 7500;
+    var totalOffset = 0;
     
-    func DownloadTestObjectPool(){
+    func startDownloadingAllObjects(){
+        DownloadTestObjectPool(offset: 0);
+    }
+    
+    func DownloadTestObjectPool(offset:Int){
         
-        let testURL = "https://hackathon.philamuseum.org/api/v0/collection/objectsOnView?limit=50&offset=0&api_token=C3XAu0Sgmrllig0aYGmS46LVfvCt0elxHP1gGWYOJZHFJQpW3kLgXybPni5G"
+        let testURL = "https://hackathon.philamuseum.org/api/v0/collection/objectsOnView?limit=\(pageCount)&offset=\(offset)&api_token=C3XAu0Sgmrllig0aYGmS46LVfvCt0elxHP1gGWYOJZHFJQpW3kLgXybPni5G"
         
         Alamofire.request(testURL).responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
+//            print(response.request)  // original URL request
+//            print(response.response) // HTTP URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
             
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
+                
+//                if()
+                self.totalOffset += self.pageCount;
+                if(self.totalOffset < self.hardCodedLimit){
+                    self.DownloadTestObjectPool(offset: self.totalOffset);
+                }
             }
+            
+            
+            
         }
     }
     

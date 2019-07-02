@@ -17,6 +17,8 @@
 		9B9912701E9D854C00674BB8 /* ArtGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B99126F1E9D854C00674BB8 /* ArtGridCell.xib */; };
 		9B9912741E9D866500674BB8 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9912731E9D866500674BB8 /* IntroViewController.swift */; };
 		9B9912791E9DD4C800674BB8 /* GalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9912781E9DD4C800674BB8 /* GalleryDataSource.swift */; };
+		9BE3A0701E9FF81300F66258 /* GalleryGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A06F1E9FF81300F66258 /* GalleryGridCell.swift */; };
+		9BE3A0721EA0003700F66258 /* Hackathon-collectiondata.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BE3A0711EA0003700F66258 /* Hackathon-collectiondata.json */; };
 		DDB878FA26FF3EAA92006C31 /* Pods_SubtleVibes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD4D6D5EA682E6B6E7C1274 /* Pods_SubtleVibes.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		9B99126F1E9D854C00674BB8 /* ArtGridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtGridCell.xib; path = Views/ArtGridCell.xib; sourceTree = "<group>"; };
 		9B9912731E9D866500674BB8 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = ViewControllers/IntroViewController.swift; sourceTree = "<group>"; };
 		9B9912781E9DD4C800674BB8 /* GalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDataSource.swift; sourceTree = "<group>"; };
+		9BE3A06F1E9FF81300F66258 /* GalleryGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryGridCell.swift; sourceTree = "<group>"; };
+		9BE3A0711EA0003700F66258 /* Hackathon-collectiondata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Hackathon-collectiondata.json"; sourceTree = "<group>"; };
 		A69307B9919D4CC28A96A821 /* Pods-SubtleVibes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubtleVibes.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubtleVibes/Pods-SubtleVibes.release.xcconfig"; sourceTree = "<group>"; };
 		D7CDF47A27AB77F128E7B7F9 /* Pods-SubtleVibes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubtleVibes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubtleVibes/Pods-SubtleVibes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +123,7 @@
 		9B99123F1E9D72A700674BB8 /* SubtleVibes */ = {
 			isa = PBXGroup;
 			children = (
+				9BE3A0711EA0003700F66258 /* Hackathon-collectiondata.json */,
 				9B9912751E9DD48F00674BB8 /* Controllers */,
 				9B99126E1E9D850E00674BB8 /* Views */,
 				9B9912401E9D72A700674BB8 /* AppDelegate.swift */,
@@ -154,6 +159,7 @@
 			children = (
 				9B9912441E9D72A700674BB8 /* Main.storyboard */,
 				9B99126F1E9D854C00674BB8 /* ArtGridCell.xib */,
+				9BE3A06F1E9FF81300F66258 /* GalleryGridCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			files = (
 				9B99124B1E9D72A700674BB8 /* LaunchScreen.storyboard in Resources */,
 				9B9912701E9D854C00674BB8 /* ArtGridCell.xib in Resources */,
+				9BE3A0721EA0003700F66258 /* Hackathon-collectiondata.json in Resources */,
 				9B9912481E9D72A700674BB8 /* Assets.xcassets in Resources */,
 				9B9912461E9D72A700674BB8 /* Main.storyboard in Resources */,
 			);
@@ -363,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE3A0701E9FF81300F66258 /* GalleryGridCell.swift in Sources */,
 				9B9912741E9D866500674BB8 /* IntroViewController.swift in Sources */,
 				9B9912791E9DD4C800674BB8 /* GalleryDataSource.swift in Sources */,
 				9B9912431E9D72A700674BB8 /* ViewController.swift in Sources */,

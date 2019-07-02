@@ -26,7 +26,7 @@ class IntroViewController: UIPageViewController, UIPageViewControllerDataSource 
         dataSource = self
         
         
-        GalleryDataSource.sharedInstance.DownloadTestObjectPool()
+//        GalleryDataSource.sharedInstance.startDownloadingAllObjects()
     }
     
     func setupViews(){
